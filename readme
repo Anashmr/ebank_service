@@ -1,0 +1,88 @@
+
+<h2>Micro service ebank-service</h2>
+<p>Développer des microservices (opérations CRUD) pour les applications e-banking permettant
+de gérer les comptes bancaires Utilisez les technologies JEE avec le framework et les dépendances Spring Boot.
+</p>
+<hr>
+<h3>Architecture</h3>
+<img src="screens/" alt="image representant l'architecture suivie" >
+
+<hr>
+
+<h3>les Dependances du projet</h3>
+<ul>
+<li>Spring-data-jpa</li>
+<li>Spring-data-rest</li>
+<li>lombok</li>
+<li>Spring-web</li>
+<li>h2-database</li>
+<li>springdoc-openapi-ui</li>
+</ul>
+
+<h4>Spring-data-jpa</h4>
+<p>spring data jpa permet d'utiliser des annotations jpa comme @Entity @Id pour être persistantes
+    Les données de la base de données n'ont pas besoin d'être créées par nous-mêmes mais utilisent nos classes.
+    Qu'est-ce que les données Spring JPA ?
+    Spring Data JPA vise à améliorer considérablement la mise en œuvre de la couche d'accès aux données
+    en réduisant les efforts
+</p>
+
+<h4>Spring-data-rest</h4>
+<p>Spring-data-rest permet  analyse notre application et expose les ressources
+HTTP c'est a dire nos api pour pouvoir acceder au differentes methodes grace au
+differentes requetes recu.
+</p>
+
+<h4>lombok</h4>
+<p>Pour lombok, celui-ci permet de créer des getters et des setters et des constructeurs
+ou sans arguments et nous permettent de construire notre objet
+</p>
+
+<h4>Spring-web</h4>
+<p>permet de fournir des utilitaires communs spécifiques au web et surttout 
+l'initialisation du conteneur IoC( Inversion of Control) qui permet au developpeur 
+de s'occuper du processus metier et deleguer a spring la partie technique 
+</p>
+
+<h4>h2-console</h4>
+<p>
+h2 est une base de données in memory qui nous perme de tester notre application
+en creant une base de données en memoire ce qui nous economise et permet ed tester 
+avant de passer a une base de donner sql ou nosql
+</p>
+
+<h4>springdoc-openapi-ui</h4>
+<p>
+Cette dépendance permet d'utiliser la documentation swagger, ce qui facilite la compréhension
+Notre API a toutes les différentes méthodes possibles, il y a des liens vers des tests
+Il est également possible de tester directement l'API. Cela nous donne la documentation de l'API fournie par le développeur
+frontEnd peut travailler sur la partie ui de l'application et le modèle de données à recevoir.
+</p>
+<hr>
+
+<h2>Database</h2>
+<p>nous avons utiliser une base de données h2 qui est une base de données inMemory
+et permet de tester notre appicatiion avant de passer a une base de données reel
+</p>
+
+<h2>Premier Test</h2>
+<p>L'image ci dessous montre le premier demarrage de notre application avec les données predefinies
+au demarrage dans la commandLineRunneret le test et visualisation des données dans le navigateur 
+grace au RestController qui exposer notre Api.
+</p>
+
+
+<h2>Test en Utilisant Advanced Rest Client(ARC)</h2>
+<p>Les images ci-dessous montrent le test de notre Api en Utilisant un outil comme ARC et peut etre fait aussi avec 
+POSTMAN qui est d'ailleurs le plus utilisé.
+</p>
+
+<h2>Documentation Swagger</h2>
+<p>Est une alternative a la complexité des outils de testing Api car elle permet d'avoir toutes les
+methodes de notre api et les liens a utiliser mais aussi a tester directement notre api de maniere tres simple
+</p>
+
+
+
+
+
